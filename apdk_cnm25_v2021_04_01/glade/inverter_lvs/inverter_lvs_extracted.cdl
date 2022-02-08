@@ -1,0 +1,24 @@
+*******************************************************************************
+* CDL netlist
+*
+* Library : inverter_lvs
+* Top Cell Name: inverter_lvs
+* View Name: extracted
+* Netlist created: 16.Jul.2021 11:38:24
+*******************************************************************************
+
+*.SCALE METER
+*.GLOBAL 
+
+*******************************************************************************
+* Library Name: inverter_lvs
+* Cell Name:    inverter_lvs
+* View Name:    extracted
+*******************************************************************************
+
+.SUBCKT inverter_lvs vout
+*.PININFO vout:B
+
+mM1 n0 n4 vdd n3 cnm25modp w=4.5e-06 l=3e-06 ad=2.475e-11 as=2.475e-11 pd=2e-05 ps=2e-05 m=1
+mM0 n1 n4 vdd n2 cnm25modn w=4.5e-06 l=3e-06 ad=2.475e-11 as=2.475e-11 pd=2e-05 ps=2e-05 m=1
+.ENDS

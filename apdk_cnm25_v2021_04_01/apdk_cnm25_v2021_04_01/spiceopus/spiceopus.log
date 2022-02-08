@@ -1,0 +1,23 @@
+Started logging, 2021-06-17 17:22:33
+
+Changed work directory to '.'
+Note: can't find init file.
+
+Welcome to Program: SpiceOpus (c), version: 2.33 $Revision: 217 $
+Date built: Sep  6 2019
+
+University of Ljubljana, Slovenia
+Faculty of Electrical Engineering
+Group For Computer Aided Circuit Design
+http://www.spiceopus.si
+
+Loading xtendedlib.cm
+File not found in SPICELIB/cm. Trying default dll path.
+xtendedlib.cm, version 1.0 $Revision: 200 $, Oct 30 2017
+XSpice extended models
+Author: MD & FSG
+Copyright: (c) 2017
+Found 11 CM device(s) and 0 UDN(s).
+Successfully loaded 11 CM device(s) and 0 UDN(s).
+
+SpiceOpus (c) 1 -> 

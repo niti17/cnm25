@@ -1,0 +1,20 @@
+*test_oa_sr.sp3
+* Slew-rate +/-
+
+.control
+
+delcirc all
+destroy all
+delete all
+save all
+
+source oa_follower_pulse.cir
+tran 1n 5u
+
+let vout=v(vout)
+plot create plot1 vout xlabel 'Time [s]' ylabel 'Output Voltage [V]'
+*plot print plot1 file test_oa_sr.pdf
+
+.endc
+
+.end

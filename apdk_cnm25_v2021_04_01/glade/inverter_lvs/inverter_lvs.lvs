@@ -1,0 +1,69 @@
+-----------------------------------------------------------------------------
+Gemini 2.7.4 (64 bit) Compiled at 09:53:00 on Mar 26 2021 by Visual C++ 13.3
+-----------------------------------------------------------------------------
+
+Gemini started at 11:38:24 on 16/07/2021
+
+Command line:
+	-w 10.000000 -g C:\glade\apdk_cnm25_v2021_04_01\glade\inverter_lvs\inverter_lvs.err -S C:\glade\apdk_cnm25_v2021_04_01\glade\inverter_lvs\inverter_lvs_extracted.cdl C:\glade\apdk_cnm25_v2021_04_01\glade\inverter_lvs\inverter_lvs.cdl_flat 
+
+-----------------------------------------------------------------------------
+	Netlist summary before reduction : inverter_lvs_extracted.cdl
+-----------------------------------------------------------------------------
+  Number of devices :       2
+  Number of nets    :       6
+  Number of ports   :       1
+
+
+-----------------------------------------------------------------------------
+	Netlist summary before reduction : inverter_lvs.cdl_flat
+-----------------------------------------------------------------------------
+  Number of devices :       2
+  Number of nets    :       4
+  Number of ports   :       4
+
+-----------------------------------------------------------------------------
+	Netlist summary after reduction : 
+-----------------------------------------------------------------------------
+		inverter_lvs_extracted.cdl	inverter_lvs.cdl_flat
+  Number of devices :       2			2
+  Number of nets    :       6			4
+  Number of ports   :       1			4
+
+
+The circuits are different.
+
+These circuits contain some symmetry (75% nodes not yet matched).
+Gemini will attempt to find a valid match for symmetrical nodes.
+##There were no device property errors.
+0 (0%) matches were found by local matching.
+
+The following netlist mismatches occurred:
+
+-----------------------------------------------------------------------------
+	Netlist errors : inverter_lvs_extracted.cdl 
+-----------------------------------------------------------------------------
+4 NETS do not match:
+NET "n2" 1 connections
+  N: (inst MM0) [g] n4 :: [s,d,sub] n1, vdd, n2 [l=3, w=4.5]
+NET "n1" 1 connections
+  N: (inst MM0) [g] n4 :: [s,d,sub] n1, vdd, n2 [l=3, w=4.5]
+NET "n3" 1 connections
+  N: (inst MM1) [g] n4 :: [s,d,sub] n0, vdd, n3 [l=3, w=4.5]
+NET "n0" 1 connections
+  N: (inst MM1) [g] n4 :: [s,d,sub] n0, vdd, n3 [l=3, w=4.5]
+
+-----------------------------------------------------------------------------
+	Netlist errors : inverter_lvs.cdl_flat 
+-----------------------------------------------------------------------------
+2 NETS do not match:
+NET "vss" 2 connections
+  N: (inst MM0) [g] vin :: [s,d,sub] vout, vss, vss [l=3, w=4.5]
+  N: (inst MM0) [g] vin :: [s,d,sub] vout, vss, vss [l=3, w=4.5]
+NET "vdd" 2 connections
+  N: (inst MM1) [g] vin :: [s,d,sub] vdd, vout, vdd [l=3, w=4.5]
+  N: (inst MM1) [g] vin :: [s,d,sub] vdd, vout, vdd [l=3, w=4.5]
+
+0 devices and 4 nets written to C:\glade\apdk_cnm25_v2021_04_01\glade\inverter_lvs\inverter_lvs.err
+
+Gemini completed at 11:38:24 on 16/07/2021

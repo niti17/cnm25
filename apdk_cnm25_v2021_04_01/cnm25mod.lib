@@ -1,0 +1,79 @@
+.lib ttt
+.model cnm25modn nmos
++ LEVEL   = 9
++ VERSION = 3.2.4          TNOM    = 27             TOX     = 3.75E-8
++ XJ      = 1.5E-7         NCH     = 1.7E17         VTH0	= 0.860363
++ K1      = 1.17296        K2      = -0.05          K3      = 11.2079
++ K3B     = -1.59332       W0      = 1.00727E-6     NLX     = -1E-9
++ DVT0W   = 0              DVT1W   = 0              DVT2W   = -0.032
++ DVT0    = 4.11104        DVT1    = 0.366189       DVT2    = -0.182099
++ U0      = 0.0573986      UA      = 1.72783E-10    UB      = 5E-18
++ UC      = 4.01727E-11    VSAT    = 1.848E5        A0      = 1.05122
++ AGS     = 0.111468       B0      = 1.6771E-7      B1      = -5.04982E-9
++ KETA    = -0.047         A1      = 0              A2      = 1
++ RDSW    = 3.65E3         PRWG    = 0.0338512      PRWB    = -1E-3
++ WR      = 1              WINT    = 4.55906E-7     LINT    = 9E-7
++ XL      = 0              XW      = 0              DWG     = -2.5492E-8
++ DWB     = 3.22958E-8     VOFF    = -0.124454      NFACTOR = 1.04789
++ CIT     = 0              CDSC    = 2.4E-4         CDSCD   = 0
++ CDSCB   = 0              ETA0    = 0.0354838      ETAB    = -0.07
++ DSUB    = 0.56           PCLM    = 1.96809        PDIBLC1 = 0.482853
++ PDIBLC2 = 0.01           PDIBLCB = 0              DROUT   = 0.415163
++ PSCBE1  = 5.99202E8      PSCBE2  = 5E-5           PVAG    = 0.0141775
++ DELTA   = 3.6636E-3      MOBMOD  = 1              PRT     = 0
++ UTE     = -1.5           KT1     = 0              KT1L    = 0
++ KT2     = 0              UA1     = 4.31E-9        UB1     = -7.61E-18
++ UC1     = -5.6E-11       AT      = 3.3E4          NQSMOD  = 0
++ WL      = 0              WLN     = 1              WW      = 0
++ WWN     = 1              WWL     = 0              LL      = 0
++ LLN     = 1              LW      = 0              LWN     = 1
++ LWL     = 0              CAPMOD  = 2              CJ      = 2.940466E-4
++ PB      = 0.6681951      MJ      = 0.438766       CJSW    = 5.450602E-10
++ PBSW    = 0.4            MJSW    = 0.2725869      TCJ     = 0
++ TPB     = 0              TCJSW   = 0              TPBSW   = 0
++ NOFF    = 1              ACDE    = 1              MOIN    = 15
++ TPBSWG  = 0              TCJSWG  = 0              PRDSW   = -3.85642E3
++ PVSAT   = -1.8E5         CGDO    = 9.89535E-10    CGSO    = 9.89535E-10
++ NOIMOD  = 1              AF      = 1.33           KF      = 1e-29 
+.endl ttt
+
+.lib fff
+.model cnm25modn nmos
++ LEVEL   = 9
++ VERSION = 3.2.4          TNOM    = 27             TOX     = 3.75E-8
++ XJ      = 1.5E-7         NCH     = 1.7E17         VTH0	= 0.63934
++ K1      = 1.17296        K2      = -0.05          K3      = 11.2079
++ K3B     = -1.59332       W0      = 1.00727E-6     NLX     = -1E-9
++ DVT0W   = 0              DVT1W   = 0              DVT2W   = -0.032
++ DVT0    = 4.11104        DVT1    = 0.366189       DVT2    = -0.182099
++ U0      = 0.0780374     UA      = 1.72783E-10    UB      = 5E-18
++ UC      = 4.01727E-11    VSAT    = 1.848E5        A0      = 1.05122
++ AGS     = 0.111468       B0      = 1.6771E-7      B1      = -5.04982E-9
++ KETA    = -0.047         A1      = 0              A2      = 1
++ RDSW    = 3.65E3         PRWG    = 0.0338512      PRWB    = -1E-3
++ WR      = 1              WINT    = 4.55906E-7     LINT    = 9E-7
++ XL      = 0              XW      = 0              DWG     = -2.5492E-8
++ DWB     = 3.22958E-8     VOFF    = -0.124454      NFACTOR = 1.04789
++ CIT     = 0              CDSC    = 2.4E-4         CDSCD   = 0
++ CDSCB   = 0              ETA0    = 0.0354838      ETAB    = -0.07
++ DSUB    = 0.56           PCLM    = 1.96809        PDIBLC1 = 0.482853
++ PDIBLC2 = 0.01           PDIBLCB = 0              DROUT   = 0.415163
++ PSCBE1  = 5.99202E8      PSCBE2  = 5E-5           PVAG    = 0.0141775
++ DELTA   = 3.6636E-3      MOBMOD  = 1              PRT     = 0
++ UTE     = -1.5           KT1     = 0              KT1L    = 0
++ KT2     = 0              UA1     = 4.31E-9        UB1     = -7.61E-18
++ UC1     = -5.6E-11       AT      = 3.3E4          NQSMOD  = 0
++ WL      = 0              WLN     = 1              WW      = 0
++ WWN     = 1              WWL     = 0              LL      = 0
++ LLN     = 1              LW      = 0              LWN     = 1
++ LWL     = 0              CAPMOD  = 2              CJ      = 2.940466E-4
++ PB      = 0.6681951      MJ      = 0.438766       CJSW    = 5.450602E-10
++ PBSW    = 0.4            MJSW    = 0.2725869      TCJ     = 0
++ TPB     = 0              TCJSW   = 0              TPBSW   = 0
++ NOFF    = 1              ACDE    = 1              MOIN    = 15
++ TPBSWG  = 0              TCJSWG  = 0              PRDSW   = -3.85642E3
++ PVSAT   = -1.8E5         CGDO    = 9.89535E-10    CGSO    = 9.89535E-10
++ NOIMOD  = 1              AF      = 1.33           KF      = 1e-29 
+.endl fff
+
+

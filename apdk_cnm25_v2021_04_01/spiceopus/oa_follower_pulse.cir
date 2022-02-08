@@ -1,0 +1,60 @@
+*******************************************************************************
+* CDL netlist
+*
+* Library : ExampleLib
+* Top Cell Name: oa_follower_pulse
+* View Name: schematic
+* Netlist created: 17.Jun.2021 20:49:18
+*******************************************************************************
+
+*.SCALE METER
+*.GLOBAL gnd
+
+*******************************************************************************
+* Library Name: ExampleLib
+* Cell Name:    opamp_design
+* View Name:    schematic
+*******************************************************************************
+.include CNM25.lib 
+*'C:\glade\apdk_cnm25_v2021_04_01\spiceopus\cnm25mod.lib' ttt
+.SUBCKT opamp_design vinn vinp vout vdd vss ibias
+*.PININFO vss:B vinp:I vdd:B vout:O ibias:B vinn:I
+
+mI7 vdd ibias vcom vdd cnm25modp w=24u l=6u m=4
+mI3 vload vload vss vss cnm25modn w=24u l=6u m=1
+mI1 vcom vinn vload vdd cnm25modp w=32u l=6u m=6
+cI9 vout vinter cnm25cpoly w=100u l=100u m=2
+mI4 vinter vload vss vss cnm25modn w=24u l=6u m=1
+mI2 vcom vinp vinter vdd cnm25modp w=32u l=6u m=6
+mI8 vdd ibias ibias vdd cnm25modp w=24u l=6u m=1
+mI5 vdd ibias vout vdd cnm25modp w=24u l=6u m=16
+mI6 vout vinter vss vss cnm25modn w=48u l=6u m=10
+.ENDS
+
+.nodeset v(vout)=2.5
+iI4 ibias gnd dc=10u
+
+xI0 vout vin vout vdd gnd ibias opamp_design
+vI6 vdd gnd dc=5
+vX10 vin gnd dc=2.5   pulse(2 3 1u 1n 1n 2u  )
+
+.options gmin=1e-15
+cI1 vout gnd c=2u
+vI11 gnd 0 0
+.control
+delcirc all
+destroy all
+delete all
+save all
+set filetype = ascii
+tran 1n 5u
+let vout=v(vout)
+plot create plot1 vout xlabel 'Time [s]' ylabel 'Output Voltage [V]'
+*plot v(vout)
+*+xlabel 'Time [s]'
+*+ylabel 'Output Voltage [V]'
+
+*write C:/glade/digital_wd/oa_follower_pulse.cir.raw all
+
+.endc
+.end
